@@ -1,0 +1,45 @@
+version: "3.1"
+nlu:
+- intent: get_closest_to
+  examples: |
+    - Подскажи игру, похожую на [Call of Duty](target_name)
+    - Подскажи игры, похожие на [Need for speed](target_name)
+    - Игры, похожие на [Need for speed](target_name)
+    - Какие есть игры, похожие на [Mario odessy](target_name)
+    - Какие есть игры, как [Mario odessy](target_name)
+    - Что похоже на [Battlefield Bad Company 2](target_name)
+    - [Mario Galaxy](target_name)
+- intent: get_best_from_publisher
+  examples: |
+    - Какие есть самые лучшие игры от издателя [Activision](target_name)
+    - Что есть от издателя [Blizzard](target_name)
+    - Игры от издателя [Blizzard](target_name)
+    - Издатель [Blizzard](target_name)
+- intent: get_best_from_developer
+  examples: |
+    - Какие есть самые лучшие игры от разработчика [Valve](target_name)
+    - Что есть от создателя [Activision](target_name)
+- intent: greet
+  examples: |
+    - Привет
+    - Здравствуйте
+    - Приветствую
+    - Добрый день
+    - Добрый вечер
+    - Доброе утро
+    - Доброй ночи
+    - Как дела?
+- intent: goodbye
+  examples: |
+    - Пока
+    - До свидания
+    - Спасибо, пока
+    - До скорой встречи
+    - Увидимся
+    - Всего доброго
+    - Прощай
+    - Покедова
+    - До новых встреч
+    - Покасики
+    - Удачи
+    - Всего хорошего

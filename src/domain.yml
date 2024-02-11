@@ -1,0 +1,35 @@
+version: '3.1'
+intents:
+- get_best_from_publisher
+- get_best_from_developer
+- get_closest_to
+- goodbye
+- greet
+entities:
+- target_name
+slots:
+  target_name:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: target_name
+actions:
+- utter_greet
+- action_get_closest_to
+- action_get_best_from_developer
+- action_get_best_from_publisher
+responses:
+  utter_greet:
+  - text: |-
+      Привет!
+      Чем я могу помочь?
+  utter_goodbye:
+  - text: |-
+      До свидания.
+      Хорошего дня!
+  utter_default:
+  - text: Извините, я не могу понять ваш запрос. Пожалуйста, переформулируйте вопрос
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

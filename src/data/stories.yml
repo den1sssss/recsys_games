@@ -1,0 +1,16 @@
+version: "3.1"
+stories:
+  - story: ClosesTo
+    steps:
+    - intent: get_closest_to
+    - action: action_get_closest_to
+
+  - story: BestFromPublisher
+    steps:
+    - intent: get_best_from_publisher
+    - action: action_get_best_from_publisher
+
+  - story: BestFromDeveloper
+    steps:
+    - intent: get_best_from_developer
+    - action: action_get_best_from_developer
